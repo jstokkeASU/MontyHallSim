@@ -19,8 +19,12 @@
 </head>
 <body>
     <div class="container-fluid" style="width:50%">
-        <p>To simulate the Monty Hall problem, I randomly selected a winner 1,000 times.  Then I created a new random number to pick the user selection 1,000 times.  Based on those random numbers I determined what the user </p>
-        <table class="table table-bordered">
+        <p>
+            To simulate the Monty Hall problem, I randomly selected a winner 1,000 times.
+            Then I created a new random number to pick the user selection 1,000 times.
+            The top table is just there to ensure the random numbers appear to be randomly distributed
+        </p>
+        <table class="table table-bordered" style="background-color: gray">
             <tr>
                 <th>Selections</th>
                 <th>Percent #1</th>
@@ -41,13 +45,18 @@
             </tr>
             <tr>
                 <td>Pick Changed To</td>
-                <td id="changedOne">0</td>
-                <td id="changedTwo">0</td>
-                <td id="changedThree">0</td>
+                <td id="changedOne"></td>
+                <td id="changedTwo"></td>
+                <td id="changedThree"></td>
             </tr>
         </table>
         <p></p>
-        <table class="table table-bordered">
+        <p>
+            Based on the random numbers I determined what the pick would be changed to
+            and calculated the percentage of time the first selection would win and the
+            percentage of time changing the original pick would win.
+        </p>
+        <table class="table table-bordered" style="background-color: gray">
             <tr>
                 <th id="blank"></th>
                 <th>1st Pick</th>
