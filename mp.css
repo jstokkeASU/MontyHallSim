@@ -1,0 +1,14 @@
+﻿body {
+    text-align:center;
+}
+table, td, th {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+#selections {
+    text-align:center;
+}
+#blank {
+    border-top:1px solid white;
+    border-left:1px solid white;
+}
