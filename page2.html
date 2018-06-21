@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Monty Hall Simulation</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="mp.css" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="Script1.js" type="text/javascript"></script>
+
+</head>
+<body>
+    <h1> Which door has a prize?</h1>
+   
+    <div class="container-fluid" style="width:80%">
+        <h4 id="secondoutput" style="color: red; height: 20%;">To get started, pick a door below.<br />&nbsp;</h4>
+        <div class="row">
+            <div class="col-md-4">
+                <input type="image" id="door1" src="img/door1.gif" alt="Submit" onclick="playGame(0)" style="width:95%" />
+            </div>
+            <div class="col-md-4">
+                <input type="image" src="img/door2.gif" alt="Submit" onclick="playGame(1)" id="door2" style="width:95%" />
+            </div>
+            <div class="col-md-4">
+                <input type="image" src="img/door3.gif" alt="Submit" onclick="playGame(2)" id="door3" style="width:95%" />
+            </div>
+        </div>
+        <p id="check"></p>
+        <p id="check1"></p>
+        <p id="check2"></p>
+        <h4 id="firstoutput"></h4>
+    </div>
+    <div class="btn pull-right">
+        <button type="button" class="btn btn-primary" onclick="resetGame()">Restart Game</button>
+    </div>
+    <div classs="container-fluid">
+        <div class="row">
+            <div class="col-md-2">
+                &nbsp;
+            </div>
+            <div class="table-responsive col-md-4">
+                <table>
+                    <caption>Pick Changed</caption>
+                    <tr>
+                        <th>Win</th>
+                        <th>Loss</th>
+                        <th>Win %</th>
+                    </tr>
+                    <tr>
+                        <td id="cw">0</td>
+                        <td id="cl">0</td>
+                        <td id="cp">0</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="table-responsive col-md-4">
+                <table>
+                    <caption>Unchanged Pick</caption>
+                    <tr>
+                        <th>Win</th>
+                        <th>Loss</th>
+                        <th>Win %</th>
+                    </tr>
+                    <tr>
+                        <td id="uw">0</td>
+                        <td id="ul">0</td>
+                        <td id="up">0</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="btn pull-right">
+        <button type="button" class="btn btn-danger" id="resetScore" onclick="clearScores()">Clear Scores</button>
+    </div>
+    
+   
+
+
+            <!--<script type="text/javascript">getWinTotals()</script>-->
+
+</body>
+</html>
